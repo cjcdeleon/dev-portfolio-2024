@@ -19,6 +19,7 @@ npx degit reduxjs/redux-templates/packages/vite-template-redux dev-portfolio-202
 - `build` - build for production
 - `preview` - locally preview production build
 - `test` - launch test runner
+- `deploy` - create build and publish to gh-pages branch
 
 ## Inspiration
 
