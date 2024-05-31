@@ -13,6 +13,8 @@
     "lint": "eslint dev-portfolio-2024",
     "lint:fix": "eslint --fix dev-portfolio-2024",
     "type-check": "tsc --noEmit",
+    "fix-dist-src-folders": "sed -i 's+/assets+assets+g' dist/index.html",
+    "predeploy": "npm run build && npm run fix-dist-src-folders",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
