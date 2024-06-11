@@ -5,6 +5,7 @@ import App from "./App";
 import {store} from "./app/store";
 import "./index.css";
 import makeServer from "./mocks/server";
+import {CssBaseline} from "@mui/material";
 const container = document.getElementById("root");
 
 if (container) {
@@ -19,6 +20,7 @@ if (container) {
 
     root.render(
         <React.StrictMode>
+            <CssBaseline />
             <Provider store={store}>
                 <App />
             </Provider>
